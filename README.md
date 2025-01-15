@@ -15,7 +15,18 @@ Este projeto é uma aplicação Flask que fornece endpoints para interagir com a
 - Flask;
 - Requests;
 - Um certificado no formato PEM para autenticação com a API PIX;
-- Arquivo `requirements.txt` com as dependências necessárias.
+- Arquivo requirements.txt com as dependências necessárias.
+
+## Instalação e Configuração do Ambiente
+
+Siga os passos abaixo para configurar o ambiente e instalar as dependências necessárias para rodar a aplicação:
+
+1. **Crie um ambiente virtual (venv):**
+
+   Em um terminal, navegue até o diretório do projeto e execute o seguinte comando para criar o ambiente virtual:
+
+   ```bash
+   python3 -m venv venv
 
 ## Obtendo suas credenciais
 Um integrador pode criar quantas aplicações desejar. Para cada aplicação são gerados 2 pares de chaves ```Client_Id``` e ```Client_Secret```, sendo um par para utilização em ambiente de Produção e outro para Homologação.
