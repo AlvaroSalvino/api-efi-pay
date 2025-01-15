@@ -17,6 +17,30 @@ Este projeto é uma aplicação Flask que fornece endpoints para interagir com a
 - Um certificado no formato PEM para autenticação com a API PIX;
 - Arquivo `requirements.txt` com as dependências necessárias.
 
+## Obtendo suas credenciais
+Um integrador pode criar quantas aplicações desejar. Para cada aplicação são gerados 2 pares de chaves ```Client_Id``` e ```Client_Secret```, sendo um par para utilização em ambiente de Produção e outro para Homologação.
+
+### Para isso basta criar uma aplicação ou configurar uma já existente
+Veja como criar uma aplicação ou aproveitar uma aplicação já existente para integrar com a API Pix Efí.
+
+### Criando uma aplicação:
+Para criar uma aplicação para utilização da API Pix siga os passos abaixo:
+
+1. Acesse sua conta e clique no item "API" na parte inferior do menu à esquerda da conta Efí;
+2. Clique em "Criar aplicação"
+3. Habilite a API Pix e escolha os escopos que deseja liberar em ambiente de Produção e Homologação (você pode editá-los no futuro);
+4. Com os escopos selecionados, clique em "Continuar".
+![Imagem 1](https://dev.efipay.com.br/img/criacao_aplicacao_pix.png)
+
+### Aproveitando uma aplicação já existente:
+Para aproveitar uma aplicação já cadastrada em sua conta e usá-la para a integração com Pix, siga os passos abaixo:
+
+1. Acesse sua conta e clique no item "API" na parte inferior do menu à esquerda da conta Efí;
+2. Clique em "Aplicações". Em seguida, escolha a aplicação que será editada, clique nos três pontinhos e depois em configurações;
+3. Habilite a API Pix e escolha os escopos que deseja liberar em ambiente de Produção e Homologação (você pode editá-los sempre que quiser);
+4. Com os escopos selecionados, clique em "Continuar".
+![Imagem 1](https://dev.efipay.com.br/img/criacao_aplicacao_pix.png)
+
 ## Gerando um certificado P12
 Para gerar o seu certificado, basta seguir os passos abaixo:
 
@@ -53,8 +77,8 @@ Este será o certificado adequado para sua configuração.
 1. Clone este repositório:
 
    ```bash
-   git clone <url-do-repositorio>
-   cd flask-pix-api
+   git clone https://github.com/AlvaroSalvino/api-efi-pay.git
+   cd api-efi-pay
    ```
 
 2. Instale as dependências:
@@ -77,6 +101,11 @@ Este será o certificado adequado para sua configuração.
    ```python
    certificado = './caminho/para/seu/certificado.pem'
    ```
+    Caso o certificado.pem esteja na raiz do projeto seria:
+
+    ```python
+    certificado = './certificado.pem'
+    ```
 
 5. Escolha entre usar a URL de homologação ou produção:
 
@@ -97,7 +126,7 @@ Este será o certificado adequado para sua configuração.
 Inicie a aplicação Flask:
 
 ```bash
-python <nome_do_arquivo>.py
+python app.py
 ```
 
 A API estará disponível em `http://localhost:5000` por padrão.

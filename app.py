@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 # Configurações
 credentials = {
-    "client_id": "",
-    "client_secret": "",
+    "client_id": "seu_clien_id", # Insira seu client_id
+    "client_secret": "seu_client_secret", # Insira seu client_secret
 }
 
 certificado = './certificado.pem'  # Caminho do certificado PEM, lembre-se de converter o certificado P12 para o formato PEM (Caso não saiba como converter, consulte o README)
