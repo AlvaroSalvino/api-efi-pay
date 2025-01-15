@@ -1,4 +1,7 @@
 # Flask PIX API
+<div style="text-align: center;">
+  <img src="https://yt3.googleusercontent.com/4aXZ2E2tM-iXAOfCyQ6Av_zbfvETsScxRhTm68YaFrfl05jG3cS0KHRu2rX-UsYHH1iR8SPg=s900-c-k-c0x00ffffff-no-rj" width="300" />
+</div>
 
 ## Descrição
 
@@ -50,7 +53,8 @@ Para aproveitar uma aplicação já cadastrada em sua conta e usá-la para a int
 2. Clique em "Aplicações". Em seguida, escolha a aplicação que será editada, clique nos três pontinhos e depois em configurações;
 3. Habilite a API Pix e escolha os escopos que deseja liberar em ambiente de Produção e Homologação (você pode editá-los sempre que quiser);
 4. Com os escopos selecionados, clique em "Continuar".
-![Imagem 1](https://dev.efipay.com.br/img/criacao_aplicacao_pix.png)
+![Imagem 1](https://dev.efipay.com.br/img/edicao_aplicacao_pix.png)
+![Imagem 2](https://dev.efipay.com.br/img/criacao_aplicacao_pix.png)
 
 ## Gerando um certificado P12
 Para gerar o seu certificado, basta seguir os passos abaixo:
